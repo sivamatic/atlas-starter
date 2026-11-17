@@ -1,0 +1,46 @@
+name: Showcase submission
+description: Submit your capstone to the AI for Engineers showcase.
+title: "Showcase: "
+labels: [showcase]
+body:
+  - type: markdown
+    attributes:
+      value: We run every project before we feature it. Your repository must be public.
+  - type: input
+    id: repo
+    attributes:
+      label: Public repository URL
+      description: It needs docs/design.md (problem, architecture, trade-offs, eval results) and tests we can run.
+    validations:
+      required: true
+  - type: input
+    id: demo
+    attributes:
+      label: Demo video URL (three minutes or less)
+    validations:
+      required: true
+  - type: input
+    id: who
+    attributes:
+      label: Your name and role, as you want them shown
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What it does (one paragraph)
+    validations:
+      required: true
+  - type: textarea
+    id: proves
+    attributes:
+      label: Three or four things it proves
+      placeholder: "- Permissions enforced inside retrieval\n- An eval gate that blocks a regression in CI"
+    validations:
+      required: true
+  - type: input
+    id: score
+    attributes:
+      label: Your capstone score (out of 100)
+    validations:
+      required: true
