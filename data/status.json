@@ -1,0 +1,6 @@
+{
+  "email": {"state": "ok", "note": "No known issues."},
+  "sso": {"state": "ok", "note": "No known issues."},
+  "vpn": {"state": "degraded", "note": "Known incident INC-2041: VPN connections drop every few minutes on the EU-West gateway. Workaround: in the VPN client choose the US-East gateway. Fix expected today."},
+  "wifi": {"state": "ok", "note": "No known issues."}
+}

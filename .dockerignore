@@ -1,0 +1,11 @@
+.git
+.venv
+.venv-x64
+.env
+.pytest_cache
+**/__pycache__
+var
+reports
+deploy
+# Root README only: "*.md" is anchored at the build context root, so kb/*.md articles are kept.
+*.md

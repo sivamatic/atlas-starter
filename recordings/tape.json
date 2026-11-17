@@ -1,0 +1,52 @@
+{
+  "21b0d19ae6dec0c4": {
+    "note": "My VPN keeps dropping every few minutes. What should I do?",
+    "response": {
+      "text": "",
+      "tool_calls": [
+        {
+          "id": "call_9h14ozb9",
+          "name": "check_status",
+          "arguments": "{\"service\":\"vpn\"}"
+        }
+      ],
+      "usage": {
+        "input_tokens": 229,
+        "output_tokens": 13
+      }
+    }
+  },
+  "3c8c7cb5069f5539": {
+    "note": "My VPN keeps dropping every few minutes. What should I do?",
+    "response": {
+      "text": "The VPN is experiencing issues and our maintenance team is aware of the problem. In the meantime, you can try connecting to the US-East gateway when launching the VPN client as a temporary workaround. The issue is expected to be resolved today, so it should be back to normal soon.",
+      "tool_calls": [],
+      "usage": {
+        "input_tokens": 198,
+        "output_tokens": 57
+      }
+    }
+  },
+  "f74fb8af96286f11": {
+    "note": "Sources:\n\n[1] VPN drops and slow connections - Symptoms\nThe VPN disconnects every few minutes, or pages load slowly while connected. Since 27 October this is usually incident INC-2041, which affects the US-West gateway.\n\n[2] VPN drops and slow connections - Overview\nMeridian staff connect to internal systems through GlobalConnect VPN.\n\n[3] Work email on your phone - Email stopped syncing\nOpen Outlook, go to Settings, choose your account and select Reset account. This keeps your mail on the server.\n\n[4] Laptop repair and replacement - Replacement cycle\nLaptops are replaced every four years. Earlier replacement needs your manager's approval in the ticket.\n\nQuestion: My VPN keeps dropping every few minutes. What should I do?",
+    "response": {
+      "text": "First, I would recommend checking if the issue is related to the US-West gateway and the start date of INC-2041 [1]. If symptoms persist, I would look into the [2] overview of the VPN connection to ensure it's set up correctly. To troubleshoot, try resetting the account in Outlook to sync your email, as mentioned in [3]. If the issue is still unresolved, I would reach out to my manager or IT support team to initiate a laptop replacement or extension of the replacement cycle, as outlined in [4].",
+      "tool_calls": [],
+      "usage": {
+        "input_tokens": 231,
+        "output_tokens": 111
+      }
+    }
+  },
+  "6a64f11c41f38e18": {
+    "note": "Sources:\n\n[1] VPN drops and slow connections - Symptoms\nThe VPN disconnects every few minutes, or pages load slowly while connected. Since 27 October this is usually incident INC-2041, which affects the US-West gateway.\n\n[2] VPN drops and slow connections - If it still drops\nRestart your laptop, then check that you are on the latest GlobalConnect version (6.2 or later). If the VPN still drops on US-East, ask Atlas to open a ticket and include the time it dropped.\n\n[3] VPN drops and slow connections - Overview\nMeridian staff connect to internal systems through GlobalConnect VPN.\n\n[4] VPN drops and slow connections - Workaround during INC-2041\nOpen GlobalConnect, choose Settings, then Gateway, and select US-East. Disconnect and connect again. US-East is not affected by INC-2041. Switch back to Automatic when the incident is closed on the status page.\n\nQuestion: My VPN keeps dropping every few minutes. What should I do?",
+    "response": {
+      "text": "First, I would recommend checking if you are on the latest GlobalConnect version (6.2 or later) to see if that resolves the issue [2]. If the problem persists, I would recommend opening a ticket with me to further investigate the issue.",
+      "tool_calls": [],
+      "usage": {
+        "input_tokens": 285,
+        "output_tokens": 52
+      }
+    }
+  }
+}

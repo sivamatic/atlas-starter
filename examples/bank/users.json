@@ -1,0 +1,7 @@
+{
+  "elena": {"name": "Elena Marsh", "role": "Retail advisor, EU", "groups": ["advisors-all", "advisors-eu"]},
+  "kenji": {"name": "Kenji Arai", "role": "Retail advisor, APAC", "groups": ["advisors-all", "advisors-apac"]},
+  "ruth": {"name": "Ruth Baptiste", "role": "Private banker, EU", "groups": ["advisors-all", "advisors-eu", "private-banking"]},
+  "omar": {"name": "Omar Haddad", "role": "Compliance officer", "groups": ["advisors-all", "compliance"]},
+  "intern": {"name": "Ivy Chen", "role": "Summer intern, not yet entitled", "groups": []}
+}

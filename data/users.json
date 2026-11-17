@@ -1,0 +1,7 @@
+{
+  "priya": {"name": "Priya Nair", "role": "Field sales engineer", "groups": ["all-staff"]},
+  "marcus": {"name": "Marcus Lee", "role": "Accountant", "groups": ["all-staff", "finance"]},
+  "jo": {"name": "Jo Alvarez", "role": "Network engineer", "groups": ["all-staff", "it-staff"]},
+  "dana": {"name": "Dana Okafor", "role": "HR operations", "groups": ["all-staff", "hr"]},
+  "sam": {"name": "Sam Reyes", "role": "Contractor, not yet onboarded", "groups": []}
+}

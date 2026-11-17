@@ -1,0 +1,35 @@
+# Local Postgres with pgvector for Atlas (weeks 3 and 5), and optionally Arize Phoenix (week 6).
+#   docker compose up -d                      Postgres only
+#   docker compose --profile phoenix up -d    Postgres and Phoenix: UI at http://localhost:6006
+#   ATLAS_DB_URL=postgresql://atlas:atlas@127.0.0.1:5433/atlas
+# Port 5433 so it doesn't clash with a Postgres you may already run on 5432.
+# Dev-only credentials. In production the password comes from a secret store, never from this file.
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: atlas
+      POSTGRES_PASSWORD: atlas
+      POSTGRES_DB: atlas
+    ports:
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - atlas-pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U atlas -d atlas"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  # Week 6: a local trace viewer. Only starts with --profile phoenix.
+  # Send traces to it: OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:6006 (see README, week 6).
+  # Image and ports: https://arize.com/docs/phoenix/self-hosting/deployment-options/docker
+  phoenix:
+    image: arizephoenix/phoenix:version-21.0.0
+    profiles: ["phoenix"]
+    ports:
+      - "127.0.0.1:6006:6006"   # UI and OTLP over HTTP (/v1/traces)
+      - "127.0.0.1:4317:4317"   # OTLP over gRPC (Atlas uses HTTP; this is for other tools)
+
+volumes:
+  atlas-pg:

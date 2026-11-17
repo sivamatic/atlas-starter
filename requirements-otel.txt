@@ -1,0 +1,7 @@
+# Optional (week 6): send traces to an OpenTelemetry backend such as Langfuse or Arize Phoenix.
+#   pip install -r requirements-otel.txt
+# Atlas runs and all tests pass without these. The OTLP/HTTP exporter is used because Langfuse
+# accepts HTTP only (no gRPC); Phoenix accepts both.
+opentelemetry-api>=1.27,<2
+opentelemetry-sdk>=1.27,<2
+opentelemetry-exporter-otlp-proto-http>=1.27,<2

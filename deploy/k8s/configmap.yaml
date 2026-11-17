@@ -1,0 +1,18 @@
+# Non-secret settings. Secrets (model key, database URL) live in a Secret: see secret.example.yaml.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: atlas-config
+  labels:
+    app.kubernetes.io/name: atlas
+data:
+  LLM_MODE: "replay"            # live + LLM_BASE_URL for a real model
+  LLM_MODEL: "llama3.2:3b"
+  EMBED_MODE: "hash"
+  ATLAS_DATA_DIR: "data"        # or examples/bank, examples/healthcare, examples/devops
+  ATLAS_RERANK: "overlap"
+  ATLAS_MAX_COST_USD: "0.50"
+  ATLAS_MAX_TOKENS_PER_CALL: "400"
+  ATLAS_TRACER: "auto"
+  ATLAS_TRACE_CONTENT: "0"
+  OTEL_SERVICE_NAME: "atlas"

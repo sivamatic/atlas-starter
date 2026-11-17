@@ -1,0 +1,6 @@
+{
+  "ana": {"name": "Ana Ruiz", "role": "Site reliability engineer, on call", "groups": ["engineering", "oncall"]},
+  "ben": {"name": "Ben Okafor", "role": "Backend engineer", "groups": ["engineering"]},
+  "chloe": {"name": "Chloe Park", "role": "Security engineer", "groups": ["engineering", "security"]},
+  "pat": {"name": "Pat Doyle", "role": "Product manager", "groups": ["product"]}
+}

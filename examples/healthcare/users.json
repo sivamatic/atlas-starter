@@ -1,0 +1,7 @@
+{
+  "maria": {"name": "Maria Santos", "role": "Front desk coordinator", "groups": ["staff"]},
+  "devon": {"name": "Devon Price", "role": "Billing specialist", "groups": ["staff", "billing"]},
+  "okoye": {"name": "Dr. Ada Okoye", "role": "Physician", "groups": ["staff", "clinical"]},
+  "lin": {"name": "Lin Zhou", "role": "Practice nurse", "groups": ["staff", "clinical"]},
+  "temp": {"name": "Jordan Blake", "role": "Agency temp, not yet credentialed", "groups": []}
+}
